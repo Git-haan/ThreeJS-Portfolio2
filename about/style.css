@@ -1,0 +1,179 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html{
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.nav{
+  z-index: 2;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 8rem;
+  
+  font-family: 'Rubik', sans-serif;
+}
+
+.nav-main{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-sub{
+  position: relative;
+  gap: 4rem;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-sub:hover {
+  filter: drop-shadow(0 0 0.75rem white);
+}
+
+@media screen and (max-width: 768px){
+  .nav{
+    padding: 2rem 4rem;
+    font-size: 0.8rem;
+  }
+  .nav-sub{
+    gap: 2rem;
+  }
+}
+
+.container {
+  padding: 12rem 24rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Rubik', sans-serif;
+  min-width: 25rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 25rem;
+  padding-right: 4rem;
+}
+
+.card:hover {
+  filter: drop-shadow(0 0 0.8rem white);
+}
+
+.h1 {
+  font-size: 4rem;
+  text-align: end;
+  padding-right: 4rem;
+}
+
+.h2 {
+  font-size: 4rem;
+  text-align: start;
+}
+
+.h3 {
+  display: none;
+  font-size: 2rem;
+  text-align: start;
+}
+
+.p {
+  padding: 0;
+}
+
+.p:hover {
+  filter: drop-shadow(0 0 0.75rem white);
+}
+
+.heading {
+  padding: 2rem 0;
+  text-align: end;
+  font-weight: bold;
+}
+
+.sub-heading {
+  display: flex;
+  flex-direction: row;
+  color: #424242;
+  justify-content: space-between;
+  font-style: italic;
+}
+
+.activity {
+  margin-bottom: 2rem;
+}
+
+.activity:hover {
+  filter: drop-shadow(0 0 1rem white);
+}
+
+.role {
+  font-weight: bold;
+}
+
+.club {
+  color: white;
+  margin-top: 1rem;
+}
+
+.description {
+  font-style: italic;
+  color: #424242;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1000px){
+  .container{
+      padding: 4rem 4rem;
+      flex-direction: column;
+  }
+  .p {
+    padding-top:2rem;
+    padding-right:4rem;
+  }
+  .h1 {
+    font-size: 2rem;
+    text-align: start;
+  }
+  .h2 {
+      display: none;
+  }
+  .h3 {
+    display: block;
+  }
+  .heading {
+    text-align: start;
+  }
+  .sub-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .role{
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  .container{
+      padding: 8rem 16rem;
+  }
+  .h2 {
+      display: none;
+  }
+  .img-container {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2rem;
+      padding: 0rem 16rem;
+  }
+}
